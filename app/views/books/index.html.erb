@@ -1,0 +1,52 @@
+
+<% if flash[:notice] %>
+     <p id="notice">
+       <%= flash[:notice] %>
+     </p>
+   <% end %>
+
+
+
+<body class="pagebody">
+
+<h1 class="Books">Books</h1>
+  <table class="table">
+    <thead>
+      <tr class="thead">
+        <th class="title">Title</th>
+        <th class="body">Body</th>
+        <th claa="link"></th>
+      </tr>
+    </thead>
+  <% @books.each do |a| %>
+    <tbody>
+      <tr>
+        <th class="content"><%= a.title %></th>
+        <th class="content"><%= a.body %></th>
+        <th class="content"><%= link_to "Show", book_path(a.id) %></th>
+        <th class="content"><%= link_to "Edit", edit_book_path(a.id) %></th>
+        <th class="content"><%= link_to "Destroy", book_path(a.id), method: :delete, "data-confirm" => "Are you sure?" %></th>
+      </tr>
+    </tbody>
+  <% end %>
+  </table>
+
+<h2 class="new_book">New book</h2>
+
+<%= form_with model:@book, url:'/books', local:true do |f| %>
+
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>errors have been detected.
+  <% @book.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
+
+  <h4 class="sub_title">Title</h4>
+  <%= f.text_field :title %>
+  <h4 class="sub_title">Body</h4>
+  <%= f.text_area :body %><br>
+  <%= f.submit 'Create Book' %>
+<% end %>
+
+</body>

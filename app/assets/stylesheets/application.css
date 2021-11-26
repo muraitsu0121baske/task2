@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+/*Top画面*/
+
+.top {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.top_title {
+  font-size: 26px;
+  margin: 17.42px 0px;
+}
+
+.top_content {
+  font-size: 13px;
+  margin: 33px;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+/*Bookersのアプリページ*/
+.notice {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+
+.pagebody {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.Books {
+  display: block;
+  font-size: 26px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  margin: 17.42px 0;
+  line-height: 18px;
+}
+
+.thead {
+  padding-bottom: 5px;
+}
+
+.title {
+  font-size: 13px;
+  padding: 1px 1px 5px;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.body {
+  font-size: 13px;
+  padding: 1px 1px 5px;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.content {
+  font-size: 13px;
+  margin: 33px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 7px;
+  text-align: left;
+  word-wrap: normal;
+  font-weight: lighter;
+}
+
+
+.sub_title {
+ font-weight: lighter;
+ margin: auto;
+}
+
+
+.new_book {
+  font-size: 19.5px;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
